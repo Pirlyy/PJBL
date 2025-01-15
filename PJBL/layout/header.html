@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.njir{
+    cursor: pointer ;
+    width: 30px;
+    height: auto;
+    margin-left: -10px ;
+    gap: none;
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color:  whitesmoke
+}
+
+li, a, button {
+    font-family: "Montserrat, sans-sherif";
+    font-weight: 500;
+    font-size: 16px;
+    color:black;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+
+}
+
+.logo {
+    cursor: pointer ;
+    width: 50px;
+    height: auto;
+    margin-left: -10px ;
+    border-radius: 30px;
+}
+.nav {
+    position: relative;
+}
+
+.nav_links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    font-family:sans-serif;
+}
+
+.nav_links > li {
+    position: relative;
+    margin-right: 20px; /* Adjust spacing as needed */
+   
+}
+
+.nav_links a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.dropdown {
+    display: none; /* Hide dropdown by default */
+    position: absolute;
+    top: 100%; /* Position below the parent */
+    left: 0;
+    background-color: black; /* Background color for dropdown */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    z-index: 1000; /* Ensure dropdown is above other elements */
+    text-decoration: none;
+    list-style: none;
+}
+
+.dropdown ul {
+    list-style: none; /* Removes bullet points */
+    margin: 0; /* Removes extra spacing */
+    padding: 0; /* Removes extra padding */
+}
+
+.nav_links li:hover .dropdown {
+    display: block; /* Show dropdown on hover */
+}
+
+.dropdown li {
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.dropdown a {
+    padding: 10px 20px; /* Adjust padding for dropdown items */
+    color: black; /* Text color for dropdown items */
+    text-decoration: none;
+}
+
+.dropdown a:hover {
+    background-color: #f0f0f0; /* Change background on hover */
+}
+</style>
+<body>
+    <header>
+        <img class="logo" src="yahh.jpg" alt="logo">
+        <nav>
+            <ul class="nav_links">
+                <li>
+                    <a href="#">Category</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Bucket Bunga</a></li>
+                        <li><a href="#">Tower Snack</a></li>
+                        <li><a href="#">Hantaran</a></li>
+                        <li><a href="blooming.html">Home</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Moment</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Hari Ayah/Ibu</a></li>
+                        <li><a href="Wisuda/">Wisuda</a></li>
+                        <li><a href="Ucapan Selamat/">Ucapan Selamat</a></li>
+                        <li><a href="#">Hari Guru</a></li>
+                        <li><a href="#">Ulang Tahun</a></li>
+                        <li><a href="#">Nikahan</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <a href="login.html" class="btn-logout">Logout</a>
+        <a href="https://www.instagram.com/diandrahandycraft?igsh=ZG9mcnpiMWNtanpl">
+            <img src="instagram.png" alt="wa" class="njir">
+        </a>
+    </header>
+</body>
+</html>
